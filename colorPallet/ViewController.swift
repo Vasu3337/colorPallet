@@ -41,6 +41,9 @@ class TextCell: UICollectionViewCell {
 
 }
 
+
+
+//bhkjb
 extension TextCell {
     func configure() {
         label.translatesAutoresizingMaskIntoConstraints = false
