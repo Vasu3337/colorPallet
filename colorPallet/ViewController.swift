@@ -42,7 +42,7 @@ class TextCell: UICollectionViewCell {
 }
 
 
-
+//efhjerf
 //bhkjb
 extension TextCell {
     func configure() {
