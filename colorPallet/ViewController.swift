@@ -101,7 +101,7 @@ extension GridViewController {
             cell.label.font = UIFont.preferredFont(forTextStyle: .title1)
             
             
-                
+            
         }
         
         dataSource = UICollectionViewDiffableDataSource<Section, Int>(collectionView: collectionView) {
@@ -109,12 +109,14 @@ extension GridViewController {
             // Return the cell.
             return collectionView.dequeueConfiguredReusableCell(using: cellRegistration, for: indexPath, item: identifier)
         }
-
+        
         // initial data
         var snapshot = NSDiffableDataSourceSnapshot<Section, Int>()
         snapshot.appendSections([.main])
         snapshot.appendItems(Array(0..<19))
         dataSource.apply(snapshot, animatingDifferences: true)
+        
+        
     }
 }
 
